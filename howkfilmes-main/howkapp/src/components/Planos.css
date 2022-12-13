@@ -1,0 +1,258 @@
+* {
+    padding: 0;
+    margin: 0 auto;
+    font-family: 'Poppins', sans-serif;
+    font-size: 25px;
+}
+
+.containerLink{
+    margin: 50px -100px;
+    width: 150px;
+}
+
+.linkVoltar{
+    color: #f2f2f2;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+
+.linkVoltar:hover{
+    color: #49007a;
+}
+
+.linkVoltar h3{
+    font-size: 1em;
+    margin-top: 10px;
+}
+
+
+.containerPlanos{
+    max-width: 1200px;
+    margin: 0 auto;
+    margin-top: 100px;
+}
+
+.titulo {
+    padding-bottom: 5px;
+    text-align: center;
+    color: #ffffff;
+    font-size: 1.5em;
+}
+
+.nav-link{
+    color: #f2f2f2;
+    font-size: 0.8em;
+}
+
+.nav-link:hover{
+    color: #a5a5a5;
+}
+
+.tabs1{
+    width: 100%;
+}
+
+.plano-1,
+.plano-2,
+.plano-3{
+    color: #f2f2f2;
+    padding: 60px;
+    border: 1px white solid;
+    width: 450px;
+}
+
+.planoInfo h2{
+   font-size: 1.3em;
+   margin-bottom: 50px;
+}
+
+.planoInfo h3{
+    font-size: 1.8em;
+    margin-bottom: 50px;
+    font-weight: bold;
+ }
+
+.planos {
+    display: grid;
+    grid-template-areas: 'planos-1 planos-2 planos-3';
+    padding: 80px;
+    flex-direction: row;
+    justify-content: center;
+    grid-gap: 50px;
+    text-align: center;
+}
+
+.preencher {
+    grid-template-areas: 
+    'inputCartaoNumero' 
+    'inputCartaoNome'
+     'inputmmaa' 'inputCvv'
+     ;
+}
+
+.inputCartaoNumero,
+.inputCartaoNome,
+.inputMmaa,
+.inputCvv{
+     background-color: transparent;
+     border-radius: 10px;
+     padding: 10px 10px;
+     color: #f2f2f2;
+     margin-bottom: 10px;
+     border: 1px solid #f2f2f2a1;
+}
+
+.inputMmaa{
+    margin-right: 10px;
+}
+
+.inputCvv,
+.inputMmaa{
+    width: 50%; 
+}
+
+.inpVenc{
+    display: flex;
+}
+
+.textEco{
+    font-size: 0.8em;   
+}
+
+.BtnAssinar{
+    padding: 10px 100px;
+    background-color:#be39fc;
+    color: #f2f2f2;
+    font-weight: bold;
+    border: none;
+    margin-bottom: 50px;
+    transition: 200ms ease-in;
+}
+
+.BtnAssinar:hover{
+    background-color: #49007a;
+}
+
+.BtnAssinar:nth-child(1){
+    margin-top: 50px;
+}
+
+.textBoleto{
+    font-size: 0.7em;
+}
+
+.pagamento{
+    padding: 10px 40px;
+    color: #f2f2f2;
+    background-color: #be39fc;
+    transition: 200ms ease-in;
+}
+
+.pagamento:hover{
+    background-color: #49007a;
+}
+
+@media(max-width: 1400px){
+    .containerLink{
+        margin: 50px 100px;
+    }
+
+    .planos {
+        display: grid;
+        grid-template-areas: 'planos-1 planos-2 ';
+        padding: 80px;
+        flex-direction: row;
+        justify-content: center;
+        grid-gap: 50px;
+        text-align: center;
+    }
+}
+
+@media(max-width: 900px){
+    .containerLink{
+        margin: 50px 10px;
+    }
+
+    .linkVoltar h3{
+        font-size: 0.8em;
+        margin-top: 10px;
+    }
+
+    .planos {
+        display: grid;
+        grid-template-areas: 'planos-1';
+        padding: 80px;
+        flex-direction: row;
+        justify-content: center;
+        grid-gap: 50px;
+        text-align: center;
+    }
+
+    .planoInfo h2{
+        font-size: 1em;
+     }
+     
+    .planoInfo h3{
+        font-size: 1.5em;
+        margin-bottom: 50px;
+        font-weight: bold;
+    }
+
+    .plano-1,
+    .plano-2,
+    .plano-3{
+        color: #f2f2f2;
+        padding: 60px;
+        border: 1px white solid;
+        width: 350px;
+    }
+
+    .titulo {
+        padding-bottom: 5px;
+        text-align: center;
+        color: #ffffff;
+        font-size: 1.2em;
+    }
+
+    .BtnAssinar{
+        padding: 10px 60px;
+        background-color: #7800c9;
+        color: #f2f2f2;
+        font-weight: bold;
+        border: none;
+        margin-bottom: 50px;
+        transition: 200ms ease-in;
+    }
+
+    .nav-link{
+        color: #f2f2f2;
+        font-size: 0.5em;
+    }
+
+    .inputCartaoNumero,
+    .inputCartaoNome{
+        width: 100%;
+        font-size: 0.8em;
+    }
+
+    .inputMmaa,
+    .inputCvv{
+        font-size: 0.8em;
+    }
+
+    .nav-tabs .nav-link.active{
+        background-color: #49007a;
+        color: #f2f2f2;
+        font-weight: bold;
+        padding: 10px 20px;
+        border: none;
+    }
+
+    .nav-tabs .nav-link{
+        padding: 10px 20px;
+    }
+
+}
+
+
